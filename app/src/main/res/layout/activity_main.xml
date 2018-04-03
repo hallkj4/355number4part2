@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="a2.assign4.cmsc355.synonymantonym.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:layout_weight="1"
+            android:text="Find Synonym/Antonym.\nPlease Enter a word below"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/PTenter"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text|textPersonName"
+            android:text="" />
+
+        <Button
+            android:id="@+id/Bresults"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_weight="1"
+            android:onClick="onResultsClick"
+            android:text="Results" />
+
+        <Button
+            android:id="@+id/Bentervalues"
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:layout_weight="1"
+            android:onClick="onEnterValuesClick"
+            android:text="Fine Synonym/Antonym" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
